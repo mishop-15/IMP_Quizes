@@ -14,7 +14,7 @@ int main(){
             fir = s;
             last = i;
           }
-          if(temp<0){
+          if(temp<=0){
             temp = 0;
             s = i+1;
           }     
