@@ -27,7 +27,6 @@ bool isSmithNumber(int num) {
 }
 int main() {
     int n;
-    cout << "Enter a number: ";
     cin >> n;
     if (isSmithNumber(n)) {
         cout << "Smith Number" << endl;
