@@ -1,26 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-        int candyList[10];
-        int maxCandies = -1001;
-        int startLoc = 1, endLoc = 1;
-        for(int i=0;i<10;i++){
-            cin>>candyList[i];
-        }
-        int currentSum = 0;
-        for(int i =0;i<10;i++){
-            currentSum+=candyList[i];
-            if(currentSum>maxCandies){
-                maxCandies = currentSum;
-                endLoc+=1;
-            }
-            if(currentSum<0){
-                currentSum = 0;
-                startLoc+=1;
-            }
-        }
-
-        cout<< maxCandies <<" "<< startLoc <<" "<< endLoc << endl;
-
+    int n,temp=0,ans=0,last,fir=1,s=0;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    for(int i = 0;i<n;i++){
+          temp = temp + arr[i];
+          if(ans<temp){
+            ans = temp;
+            fir = s;
+            last = i;
+          }`
+          if(temp<0){
+            temp = 0;
+            s = i+1;
+          }     
+    }
+    cout << ans <<" "<<fir+1<<" "<<last+1<< '\n';
     return 0;
 }
