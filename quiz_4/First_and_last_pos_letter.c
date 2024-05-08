@@ -7,15 +7,15 @@ int main() {
   cin>>c;
   int first=-1;
   int last=-1;
-  for(int i=0;i<ans.length();i++){
-if(ans[i]==c){
-if(first==-1){
-  first=i;
-}
-last=i;
+    for(int i=0;i<ans.length();i++){
+        if(ans[i]==c){
+        if(first==-1){
+             first=i;
+        }
+        last=i;
 
-  }
-  }
+        }
+    }
   cout<<first+1<<last+1;
     return 0;
 }
