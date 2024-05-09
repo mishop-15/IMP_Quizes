@@ -29,5 +29,3 @@ int main()
 	removeDuplicates(arr, n);
 }
 
-// This code is contributed
-// by Surendra_Gangwar
